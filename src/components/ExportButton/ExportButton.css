@@ -1,0 +1,99 @@
+.tak-export-button {
+  position: relative;
+  display: inline-block;
+}
+
+.tak-export-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tak-spacing-xs);
+}
+
+.tak-export-icon {
+  font-size: var(--tak-font-size-md);
+  line-height: 1;
+}
+
+.tak-export-caret {
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.tak-export-caret-open {
+  transform: rotate(180deg);
+}
+
+.tak-export-loading {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: tak-export-spin 0.8s linear infinite;
+}
+
+@keyframes tak-export-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tak-export-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 160px;
+  background: var(--tak-color-background);
+  border: 1px solid var(--tak-color-border);
+  border-radius: var(--tak-radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  padding: var(--tak-spacing-xs) 0;
+  animation: tak-dropdown-fade 0.15s ease;
+}
+
+@keyframes tak-dropdown-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tak-export-option {
+  display: flex;
+  align-items: center;
+  gap: var(--tak-spacing-sm);
+  padding: var(--tak-spacing-sm) var(--tak-spacing-md);
+  cursor: pointer;
+  font-size: var(--tak-font-size-md);
+  color: var(--tak-color-text);
+  transition: background-color 0.2s ease;
+}
+
+.tak-export-option:hover {
+  background: var(--tak-color-background-secondary);
+  color: var(--tak-color-primary);
+}
+
+.tak-export-option-disabled {
+  color: var(--tak-color-text-disabled);
+  cursor: not-allowed;
+}
+
+.tak-export-option-disabled:hover {
+  background: transparent;
+  color: var(--tak-color-text-disabled);
+}
+
+.tak-export-option-icon {
+  font-size: var(--tak-font-size-md);
+  line-height: 1;
+}
+
+.tak-export-option-label {
+  flex: 1;
+}

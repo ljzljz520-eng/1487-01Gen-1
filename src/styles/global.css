@@ -1,0 +1,45 @@
+:root {
+  --tak-color-primary: #1677ff;
+  --tak-color-primary-hover: #4096ff;
+  --tak-color-primary-light: #e6f4ff;
+  --tak-color-success: #52c41a;
+  --tak-color-warning: #faad14;
+  --tak-color-error: #ff4d4f;
+  --tak-color-text: #1f2937;
+  --tak-color-text-secondary: #6b7280;
+  --tak-color-text-disabled: #9ca3af;
+  --tak-color-background: #ffffff;
+  --tak-color-background-secondary: #f9fafb;
+  --tak-color-border: #e5e7eb;
+  --tak-color-border-hover: #d1d5db;
+  --tak-color-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  --tak-radius-sm: 4px;
+  --tak-radius-md: 6px;
+  --tak-radius-lg: 8px;
+
+  --tak-spacing-xs: 4px;
+  --tak-spacing-sm: 8px;
+  --tak-spacing-md: 12px;
+  --tak-spacing-lg: 16px;
+  --tak-spacing-xl: 24px;
+
+  --tak-font-size-xs: 12px;
+  --tak-font-size-sm: 13px;
+  --tak-font-size-md: 14px;
+  --tak-font-size-lg: 16px;
+  --tak-font-size-xl: 20px;
+}
+
+.tak-reset {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: var(--tak-font-size-md);
+  color: var(--tak-color-text);
+}
+
+.tak-reset *,
+.tak-reset *::before,
+.tak-reset *::after {
+  box-sizing: border-box;
+}

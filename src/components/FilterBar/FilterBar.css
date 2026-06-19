@@ -1,0 +1,121 @@
+.tak-filter-bar {
+  background: var(--tak-color-background);
+  border: 1px solid var(--tak-color-border);
+  border-radius: var(--tak-radius-lg);
+  padding: var(--tak-spacing-lg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tak-spacing-lg);
+  align-items: flex-end;
+}
+
+.tak-filter-bar-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tak-spacing-lg);
+  flex: 1;
+}
+
+.tak-filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tak-spacing-xs);
+}
+
+.tak-filter-label {
+  font-size: var(--tak-font-size-sm);
+  color: var(--tak-color-text-secondary);
+  line-height: 1.5;
+}
+
+.tak-filter-input,
+.tak-filter-select {
+  height: 32px;
+  padding: 0 var(--tak-spacing-md);
+  border: 1px solid var(--tak-color-border);
+  border-radius: var(--tak-radius-md);
+  font-size: var(--tak-font-size-md);
+  color: var(--tak-color-text);
+  background: var(--tak-color-background);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.tak-filter-input:hover,
+.tak-filter-select:hover {
+  border-color: var(--tak-color-border-hover);
+}
+
+.tak-filter-input:focus,
+.tak-filter-select:focus {
+  border-color: var(--tak-color-primary);
+  box-shadow: 0 0 0 2px var(--tak-color-primary-light);
+}
+
+.tak-filter-input::placeholder {
+  color: var(--tak-color-text-disabled);
+}
+
+.tak-filter-date-range {
+  display: flex;
+  align-items: center;
+  gap: var(--tak-spacing-sm);
+}
+
+.tak-filter-date-range .tak-filter-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.tak-filter-date-range-sep {
+  font-size: var(--tak-font-size-sm);
+  color: var(--tak-color-text-secondary);
+  white-space: nowrap;
+}
+
+.tak-filter-bar-actions {
+  display: flex;
+  gap: var(--tak-spacing-sm);
+  flex-shrink: 0;
+}
+
+.tak-btn {
+  height: 32px;
+  padding: 0 var(--tak-spacing-lg);
+  border: 1px solid transparent;
+  border-radius: var(--tak-radius-md);
+  font-size: var(--tak-font-size-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--tak-spacing-xs);
+}
+
+.tak-btn-primary {
+  background: var(--tak-color-primary);
+  border-color: var(--tak-color-primary);
+  color: #fff;
+}
+
+.tak-btn-primary:hover {
+  background: var(--tak-color-primary-hover);
+  border-color: var(--tak-color-primary-hover);
+}
+
+.tak-btn-default {
+  background: var(--tak-color-background);
+  border-color: var(--tak-color-border);
+  color: var(--tak-color-text);
+}
+
+.tak-btn-default:hover {
+  border-color: var(--tak-color-primary);
+  color: var(--tak-color-primary);
+}
+
+.tak-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
